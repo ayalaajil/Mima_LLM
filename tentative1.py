@@ -104,10 +104,11 @@ class DialogueGenerator:
 if __name__ == "__main__":
     # Paramètres du modèle
     model_name = "meta-llama/Llama-3.2-1B"
+    token = 'token'
 
 
     # Instances des classes
-    llm_wrapper = LLMWrapper(model_name=model_name)
+    llm_wrapper = LLMWrapper(model_name=model_name , token = token )
     prompt_builder = PromptBuilder()
     dialogue_generator = DialogueGenerator(llm_wrapper, prompt_builder)
 
