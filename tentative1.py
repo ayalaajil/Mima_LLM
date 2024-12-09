@@ -2,7 +2,7 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 class LLMWrapper:
-    def __init__(self, model_name="meta-llama/Llama-3.2-1B", token="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"):
+    def __init__(self, model_name="meta-llama/Llama-3.2-1B", token= "mettre le token"):
         """
         Initialise le modèle LLM et son tokenizer.
         :param model_name: Nom du modèle sur Hugging Face.
